@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
+  height: calc(100vh - 624px);
 
   .contact-form-section {
     @include center;
