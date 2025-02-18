@@ -1,0 +1,56 @@
+@import "../../scss/colors.scss";
+@import "../../scss/mixins.scss";
+
+.container {
+  background-color: $primary-white;
+  padding: 16px;
+  gap: 16px;
+  border-radius: 16px;
+  height: 100%;
+  padding: 40px;
+
+  @include media(">=tablet") {
+    padding: 32px;
+  }
+
+  @include media(">=desktop") {
+    padding: 40px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+
+    img {
+      width: 35.616px;
+      height: 26.976px;
+    }
+
+    p {
+      margin: 0;
+      font-style: normal;
+    }
+
+    .text {
+      color: $primary-blue-variant;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    .client {
+      color: $primary-blue;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: -0.48px;
+    }
+
+    .quotation-mark {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

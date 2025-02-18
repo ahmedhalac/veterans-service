@@ -1,0 +1,46 @@
+<div class="header-container">
+    <div class="header-wrapper">
+        <div class="left-section">
+            <img class="logo" src="./../../../../assets/images/icons/svg/logo-blue-small.svg" alt="Logo">
+            <div class="menu">
+                <div [routerLink]="['/']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active"
+                    class="menu-item">
+                    <p>Home</p>
+                </div>
+                <div [routerLink]="['/about-us']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active"
+                    class="menu-item">
+                    <p>About</p>
+                </div>
+                <div [routerLink]="['/contact-us']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active"
+                    class="menu-item">
+                    <p>Contact</p>
+                </div>
+            </div>
+
+            <div class="menu-container">
+                <div *ngIf="isMobileMenuActive" class="mobile-menu">
+                    <div class="close-container">
+                        <img class="logo" alt="Logo" src="../../../../assets/images/icons/svg/logo-blue-small.svg">
+                        <img class="icon" (click)="toggleMobileMenu()"
+                            src="../../../../assets/images/icons/svg/close-icon.svg" alt="Close icon">
+                    </div>
+                    <div class="options-container">
+                        <a (click)="toggleMobileMenu()" [routerLink]="['/']" [routerLinkActiveOptions]="{exact:true}"
+                            routerLinkActive="active" class="mobile-item">Home</a>
+                        <a (click)="toggleMobileMenu()" [routerLink]="['/about-us']"
+                            [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active"
+                            class="mobile-item">About</a>
+                        <a (click)="toggleMobileMenu()" [routerLink]="['/contact-us']"
+                            [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active"
+                            class="mobile-item">Contact</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <img (click)="toggleMobileMenu()" class="menu-icon" src="../../../../assets/images/icons/svg/menu-icon.svg"
+                alt="Menu icon">
+        </div>
+    </div>
+</div>

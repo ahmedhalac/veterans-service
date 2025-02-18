@@ -1,0 +1,174 @@
+<div class="landing-container">
+    <div class="landing-wrapper">
+
+        <section class="intro">
+            <div class="intro-wrapper">
+                <div class="content">
+                    <p class="title">Pioneering Personalized Care for Veterans' Mental Health</p>
+                    <p class="subtitle">At the forefront of progress, we're redefining mental health support for
+                        veterans in Northern Virginia through individualized and innovative care</p>
+                    <div class="apply-now-btn">
+                        <button (click)="onButtonRedirect()">Apply now</button>
+                    </div>
+                </div>
+                <div class="bg-image">
+                    <img src="../../../assets/images/webp/landing-img1.webp" alt="Bg image">
+                </div>
+            </div>
+        </section>
+
+        <section class="our-mission">
+            <div class="our-mission-wrapper">
+                <div class="content">
+                    <div class="badge">
+                        <span>Our Mission</span>
+                    </div>
+                    <p class="title">Supporting Veterans' Recovery Journey</p>
+                    <p class="subtitle">Our mission is to assure veterans who suffer from Substance Abuse and Mental
+                        Health issues have access to a full continuum of care, ensuring a seamless care continuum based
+                        on their individualizing situation, support, and care needs. <br><br>
+
+                        Our support ranges from transitioning outpatient treatment to vocational rehabilitation and
+                        post-treatment.</p>
+                </div>
+                <div class="bg-image">
+                    <img src="../../../assets/images/webp/landing-img2.webp" alt="Bg image">
+                </div>
+            </div>
+        </section>
+
+        <section class="our-vision">
+            <div class="our-vision-wrapper">
+                <div class="content">
+                    <div class="badge">
+                        <span>Our Vision</span>
+                    </div>
+                    <p class="title">Lasting Recovery and Resilience</p>
+                    <p class="subtitle">S & S Veterans Services, LLC is a for-profit organization that provides Veterans
+                        in Prince Williams County (PWC), Virginia, with assistance eradicating those struggling with
+                        alcohol and Drug abuse, Mental illness, and financial planning. <br><br>
+
+                        Our primary service is to provide veterans with an individualized treatment plan to help them
+                        regain self-sufficiency (or self-resilience) and overcome barriers through a holistic treatment
+                        plan.</p>
+                </div>
+                <div class="bg-image">
+                    <img src="../../../assets/images/webp/landing-img3.webp" alt="Bg image">
+                </div>
+            </div>
+        </section>
+
+        <section class="banner">
+            <img src="../../../assets/images/webp/landing-img4.webp" alt="Banner image" class="banner-img">
+            <div class="banner-wrapper">
+                <div class="content">
+                    <p class="title">Comprehensive Services for Lasting Well-being</p>
+                    <p class="subtitle">Explore our offerings and embark on a journey towards a brighter, more
+                        self-sufficient future.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="services-wrapper">
+                <div class="left-section">
+                    <div class="card-item blue img">
+                        <img src="../../../assets/images/webp/landing-img5.webp" alt="Card image">
+                        <p class="title">Comprehensive Assessment</p>
+                        <p class="text">Each veteran will undergo a comprehensive assessment to identify their needs and
+                            develop an individualized treatment plan.</p>
+                    </div>
+                    <div class="card-item">
+                        <p class="title">Virtual Counseling sessions</p>
+                        <p class="text">Individual counseling sessions will address issues related to addiction, mental
+                            health, post-traumatic stress disorder (PTSD), depression, anxiety, and other co-occurring
+                            disorders.</p>
+                    </div>
+                    <div class="card-item blue">
+                        <p class="title">Financial literacy</p>
+                        <p class="text">We will assist veterans in understanding how to save and invest their finances.
+                        </p>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="card-item img">
+                        <img src="../../../assets/images/webp/landing-img6.webp" alt="Card image">
+                        <p class="title">Evidence-Based Treatment</p>
+                        <p class="text">We will offer evidence-based treatments such as cognitive-behavioral therapy
+                            (CBT), dialectical behavior therapy (DBT), medication-assisted treatment (MAT), and
+                            trauma-focused therapies.</p>
+                    </div>
+                    <div class="card-item blue">
+                        <p class="title">Family Support</p>
+                        <p class="text">We recognize the importance of family involvement in the recovery process.
+                            We will provide educational programs and support services to help families understand and
+                            cope with the challenges faced by their loved ones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <img src="../../../assets/images/webp/landing-img7.webp" alt="Banner image" class="banner-img">
+            <div class="testimonials-wrapper">
+                <div class="content">
+                    <span class="badge">Testimonials</span>
+                    <p class="title">Hear What Our Clients Have to Say</p>
+                </div>
+                <section>
+                    <swiper-container #swiperRef swiperElement [config]="config" init="false">
+                        <swiper-slide class="slide" *ngFor="let slide of slides">
+                            <app-testimonial [text]="slide.text" [client]="slide.client"></app-testimonial>
+                        </swiper-slide>
+                    </swiper-container>
+                </section>
+            </div>
+        </section>
+
+        <section class="certifications">
+            <div class="certifications-wrapper">
+                <div class="content">
+                    <div class="title">Our Certifications</div>
+                    <div class="cert-wrapper">
+                        <img src="../../../assets/images/icons/svg/company1.svg" alt="Company">
+                        <img src="../../../assets/images/icons/svg/company2.svg" alt="Company">
+                        <img src="../../../assets/images/icons/svg/company3.svg" alt="Company">
+                        <img src="../../../assets/images/icons/svg/company4.svg" alt="Company">
+                        <img src="../../../assets/images/icons/svg/company5.svg" alt="Company">
+                        <img src="../../../assets/images/icons/svg/company6.svg" alt="Company">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="question-container">
+                <div class="question-wrapper">
+                    <div class="content">
+                        <span class="badge">Frequently Asked Questions</span>
+                        <p class="title">Your Queries, Answered</p>
+                        <p class="text">We're here to provide you with all the information you need to make informed
+                            decisions about your needs.</p>
+                    </div>
+                    <div class="faqs">
+                        <div class="accordions" *ngFor="let faq of faqs">
+                            <app-accordion [question]="faq.question" [answer]="faq.answer"></app-accordion>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="support">
+            <div class="support-container">
+                <div class="support-wrapper">
+                    <div class="content">
+                        <p class="title">Reach Out for Compassionate Support and Guidance</p>
+                        <button (click)="onButtonRedirect()" class="contact-us">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
