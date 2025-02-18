@@ -1,27 +1,67 @@
-# VeteransServiceLanding
+# Veterans Service 🇺🇸  
+**Empowering veterans with innovative mental health support.**  
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+## 🌍 Live Preview  
+🔗 [Veterans Service on Vercel](https://veterans-service.vercel.app/)
 
-## Development server
+## 📖 About  
+At the forefront of progress, we're redefining mental health support for veterans in Northern Virginia through **individualized and innovative care**.  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Our mission is to ensure that veterans suffering from **Substance Abuse** and **Mental Health** issues have access to a **full continuum of care**, offering seamless support tailored to their unique needs.  
 
-## Code scaffolding
+We provide assistance in areas such as:
+- Outpatient treatment transition
+- Vocational rehabilitation
+- Post-treatment support  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+S & S Veterans Services, LLC is a **for-profit organization** dedicated to helping veterans in **Prince William County (PWC), Virginia**. We aim to assist those struggling with **alcohol and drug abuse**, **mental illness**, and **financial planning** by offering **individualized treatment plans** for self-sufficiency and resilience.
 
-## Build
+## 🛠️ Technologies Used  
+- **Angular 16**  
+- **SCSS for styling**  
+- **Vercel for deployment**  
+- **RxJS** (if applicable)  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 📦 Installation & Setup  
+1. Clone the repository:  
+   ```sh
+   git clone <repository-url>
+   cd veterans-service
+   ```
+2. Install dependencies:  
+   ```sh
+   npm install
+   ```
+3. Start the development server:  
+   ```sh
+   ng serve
+   ```
+   Navigate to [localhost:4200](http://localhost:4200/) to view it.
 
-## Running unit tests
+## 🔨 Development Commands  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Generate a component:**  
+  ```sh
+  ng generate component component-name
+  ```
+- **Build the project:**  
+  ```sh
+  ng build
+  ```
+- **Run unit tests:**  
+  ```sh
+  ng test
+  ```
+- **Run end-to-end tests:**  
+  ```sh
+  ng e2e
+  ```
 
-## Running end-to-end tests
+## 🚀 Deployment  
+Deployed on **Vercel**. To deploy manually:  
+```sh
+vercel --prod
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🤝 Contributing  
+If you'd like to contribute, feel free to submit a pull request.  
